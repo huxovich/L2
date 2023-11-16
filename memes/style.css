@@ -1,0 +1,19 @@
+#memeContainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 2px dashed #000;
+  margin: 20px;
+}
+
+.textElement {
+  position: absolute;
+  font-size: 50px;
+  padding: 10px;
+  cursor: move;
+}
+
+/* #uploadedImage {
+  max-width: 100%;
+  height: auto;
+} */

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <input type="file" accept="image/*" id="imageUpload">
+  <div id="memeContainer" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img id="uploadedImage" src="#" alt="Uploaded Image">
+    <div id="textElements" draggable="true" ondragstart="drag(event)"></div>
+  </div>
+  <button onclick="addText()">Add Text</button>
+  <button onclick="saveMeme()">Save Meme</button>
+  <button onclick="increaseFontSize()">Increase Font Size</button>
+  <button onclick="decreaseFontSize()">Decrease Font Size</button>
+  <a id="downloadMeme" style="display: none"></a>
+  <script src="script.js"></script>
+</body>
+</html>
